@@ -18,7 +18,9 @@ For validating with regex, the compiling time was not included to measures.
 
 ### Results on my machine
 
-| Validation Method | Throughput (ns/op) |
-|---|--:|--:|--:|
-| Atoi | 10.1 |
-| Regex | 222 |
+| Validation Method | Work case | Throughput (ns/op) |
+|---|---|--:|
+| Atoi | Success | 21.9 |
+| Atoi | Fail | 62.4 |
+| Regex | Success | 186 |
+| Regex | Fail | 296 |
