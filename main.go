@@ -10,9 +10,8 @@ func validateWithAtoi(n string) bool {
 	return err != nil
 }
 
-func validateWithRegex(n string) bool {
-	exp := regexp.MustCompile("[0-9]+")
-	return exp.MatchString(n)
+func validateWithRegex(r *regexp.Regexp, n string) bool {
+	return r.MatchString(n)
 }
 
 func main() {}
